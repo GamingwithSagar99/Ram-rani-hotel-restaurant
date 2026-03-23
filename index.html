@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ram Rani Hotel & Restaurant in Mohania, Bihar. Comfortable AC rooms, free Wi-Fi, swimming pool, and delicious multi-cuisine dining on G.T. Road." />
+  <title>Ram Rani Hotel & Restaurant — Comfortable Stays in Mohania, Bihar</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+
+      <!-- Desktop Left Links -->
+      <ul class="navbar__links navbar__links--left" role="list">
+        <li><a href="#rooms" class="navbar__link">Rooms</a></li>
+        <li><a href="#dining" class="navbar__link">Dining</a></li>
+      </ul>
+
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" aria-label="Ram Rani Hotel – Home">
+        <span class="navbar__logo-the">Welcome to</span>
+        <span class="navbar__logo-name">Ram Rani Hotel</span>
+        <span class="navbar__logo-rule" aria-hidden="true"></span>
+      </a>
+
+      <!-- Desktop Right Links -->
+      <ul class="navbar__links navbar__links--right" role="list">
+        <li><a href="#amenities" class="navbar__link">Amenities</a></li>
+        <li><a href="#gallery" class="navbar__link">Gallery</a></li>
+        <li><a href="#rooms" class="btn btn--nav">Book Now</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar__burger" id="burger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="navbar__burger-icon navbar__burger-icon--open" aria-hidden="true">
+          <i data-lucide="menu"></i>
+        </span>
+        <span class="navbar__burger-icon navbar__burger-icon--close" aria-hidden="true">
+          <i data-lucide="x"></i>
+        </span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="#rooms"     class="navbar__mobile-link">Rooms</a></li>
+        <li><a href="#dining"    class="navbar__mobile-link">Dining</a></li>
+        <li><a href="#amenities" class="navbar__mobile-link">Amenities</a></li>
+        <li><a href="#gallery"   class="navbar__mobile-link">Gallery</a></li>
+        <li><a href="#rooms"     class="btn btn--mobile-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+
+      <div class="hero__eyebrow animate-hero" style="--delay: 0.4s">
+        <span class="hero__eyebrow-rule" aria-hidden="true"></span>
+        <span class="hero__eyebrow-text">Est. Mohania, Bihar</span>
+        <span class="hero__eyebrow-rule" aria-hidden="true"></span>
+      </div>
+
+      <h1 class="hero__headline animate-hero" style="--delay: 0.6s">
+        Comfortable Stays &<br /><em>Delicious Dining</em>
+      </h1>
+
+      <p class="hero__sub animate-hero" style="--delay: 0.9s">
+        Experience the best hospitality on G.T. Road. Enjoy our AC rooms, swimming pool, and signature restaurant.
+      </p>
+
+      <ul class="hero__pills animate-hero" style="--delay: 1.2s" role="list">
+        <li class="hero__pill">
+          <i data-lucide="bed-double" class="hero__pill-icon" aria-hidden="true"></i>
+          AC Rooms
+        </li>
+        <li class="hero__pill">
+          <i data-lucide="utensils" class="hero__pill-icon" aria-hidden="true"></i>
+          Signature Restaurant
+        </li>
+        <li class="hero__pill">
+          <i data-lucide="waves" class="hero__pill-icon" aria-hidden="true"></i>
+          Swimming Pool
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Floating Booking Bar -->
+    <div class="booking-bar-wrap animate-hero" style="--delay: 1.4s">
+      <div class="booking-bar" role="search" aria-label="Availability search">
+
+        <div class="booking-bar__field">
+          <label class="booking-bar__label" for="checkin">Check-in</label>
+          <div class="booking-bar__input-row">
+            <i data-lucide="calendar" class="booking-bar__icon" aria-hidden="true"></i>
+            <input type="date" id="checkin" name="checkin" class="booking-bar__input" value="2025-03-28" aria-label="Check-in date" />
+          </div>
+        </div>
+
+        <div class="booking-bar__field">
+          <label class="booking-bar__label" for="checkout">Check-out</label>
+          <div class="booking-bar__input-row">
+            <i data-lucide="calendar" class="booking-bar__icon" aria-hidden="true"></i>
+            <input type="date" id="checkout" name="checkout" class="booking-bar__input" value="2025-04-02" aria-label="Check-out date" />
+          </div>
+        </div>
+
+        <div class="booking-bar__field">
+          <span class="booking-bar__label">Guests</span>
+          <div class="booking-bar__input-row">
+            <i data-lucide="users" class="booking-bar__icon" aria-hidden="true"></i>
+            <div class="booking-bar__guests" role="group" aria-label="Number of guests">
+              <button class="booking-bar__step" id="guests-dec" aria-label="Decrease guests">&#8722;</button>
+              <span class="booking-bar__count" id="guests-count" aria-live="polite" aria-atomic="true">2</span>
+              <button class="booking-bar__step" id="guests-inc" aria-label="Increase guests">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="booking-bar__cta" type="button" aria-label="Check availability">
+          Check Availability
+        </button>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT / WELCOME
+  ═══════════════════════════════════════════ -->
+  <section class="about section-pad" id="about" aria-label="About Ram Rani Hotel">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Text Column -->
+        <div class="about__text fade-up">
+          <div class="section-tag">Welcome to Our Home</div>
+
+          <p class="about__script" aria-hidden="true">Hospitality</p>
+
+          <h2 class="about__headline">
+            Your Home Away<br />From Home
+          </h2>
+
+          <p class="about__body">
+            Nestled on the vibrant G.T. Road in Mohania, Bihar, Ram Rani Hotel & Restaurant is a welcoming haven for families, travelers, and business guests seeking comfort, cleanliness, and genuine hospitality. Our thoughtfully designed AC rooms provide the perfect refuge after a long day of travel.
+          </p>
+          <p class="about__body">
+            From our signature multi-cuisine restaurant serving authentic local delicacies to our refreshing swimming pool perfect for relaxation, every amenity is designed with you in mind. With free Wi-Fi, 24/7 room service, and ample free parking, we ensure your stay is nothing short of comfortable and memorable.
+          </p>
+
+          <ul class="about__stats" role="list">
+            <li class="about__stat">
+              <span class="about__stat-num">30+</span>
+              <span class="about__stat-lbl">AC Rooms</span>
+            </li>
+            <li class="about__stat">
+              <span class="about__stat-num">24/7</span>
+              <span class="about__stat-lbl">Room Service</span>
+            </li>
+            <li class="about__stat">
+              <span class="about__stat-num">Free</span>
+              <span class="about__stat-lbl">Wi-Fi</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Image Column -->
+        <div class="about__img-wrap fade-up" style="--delay: 0.15s">
+          <span class="about__img-frame" aria-hidden="true"></span>
+          <img
+            src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80"
+            alt="Ram Rani Hotel — comfortable AC room with modern amenities"
+            class="about__img"
+            loading="lazy"
+            width="900"
+            height="520"
+          />
+          <div class="about__badge" aria-label="Google Rating">
+            <span class="about__badge-num">3.8&#9733;</span>
+            <span class="about__badge-lbl">Google Rated</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ROOMS & SUITES
+  ═══════════════════════════════════════════ -->
+  <section class="rooms section-pad" id="rooms" aria-label="Rooms and Suites">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-tag section-tag--center">Accommodations</div>
+        <h2 class="section-headline">Rooms &amp; Suites</h2>
+        <p class="section-sub">
+          Comfortable AC rooms with modern amenities, free Wi-Fi, and thoughtful service. Perfect for families and travelers seeking quality stays at affordable prices.
+        </p>
+      </div>
+
+      <ul class="rooms__grid" role="list">
+
+        <!-- Deluxe Room -->
+        <li class="room-card fade-up" style="--delay: 0s">
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+              alt="Standard AC Room with comfortable bed and modern amenities"
+              class="room-card__img"
+              loading="lazy"
+              width="800"
+              height="222"
+            />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__header">
+              <h3 class="room-card__name">Standard AC Room</h3>
+              <span class="room-card__size">20 m²</span>
+            </div>
+            <ul class="room-card__amenities" role="list">
+              <li class="room-card__amenity">
+                <i data-lucide="bed-double" class="room-card__amen-icon" aria-hidden="true"></i>Comfortable Bed
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="wifi" class="room-card__amen-icon" aria-hidden="true"></i>Free Wi-Fi
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="tv" class="room-card__amen-icon" aria-hidden="true"></i>TV
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="bell" class="room-card__amen-icon" aria-hidden="true"></i>Room Service
+              </li>
+            </ul>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-num">₹1,260</span>
+                <span class="room-card__price-per">/night</span>
+              </div>
+              <a href="#" class="room-card__link">
+                View Details
+                <span class="room-card__arrow" aria-hidden="true">
+                  <i data-lucide="chevron-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Executive Suite (Featured) -->
+        <li class="room-card room-card--featured fade-up" style="--delay: 0.1s">
+          <span class="room-card__badge">Most Popular</span>
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+              alt="Deluxe AC Room with king bed and modern comfort"
+              class="room-card__img"
+              loading="lazy"
+              width="800"
+              height="222"
+            />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__header">
+              <h3 class="room-card__name">Deluxe AC Room</h3>
+              <span class="room-card__size">32 m²</span>
+            </div>
+            <ul class="room-card__amenities" role="list">
+              <li class="room-card__amenity">
+                <i data-lucide="bed-double" class="room-card__amen-icon" aria-hidden="true"></i>King Bed
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="wifi" class="room-card__amen-icon" aria-hidden="true"></i>Free Wi-Fi
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="waves" class="room-card__amen-icon" aria-hidden="true"></i>Pool Access
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="thermometer" class="room-card__amen-icon" aria-hidden="true"></i>AC
+              </li>
+            </ul>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-num">₹1,800</span>
+                <span class="room-card__price-per">/night</span>
+              </div>
+              <a href="#" class="room-card__link">
+                View Details
+                <span class="room-card__arrow" aria-hidden="true">
+                  <i data-lucide="chevron-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Presidential Suite -->
+        <li class="room-card fade-up" style="--delay: 0.2s">
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80"
+              alt="Family Suite with extra beds and modern comfort"
+              class="room-card__img"
+              loading="lazy"
+              width="800"
+              height="222"
+            />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__header">
+              <h3 class="room-card__name">Family Suite</h3>
+              <span class="room-card__size">45 m²</span>
+            </div>
+            <ul class="room-card__amenities" role="list">
+              <li class="room-card__amenity">
+                <i data-lucide="bed-double" class="room-card__amen-icon" aria-hidden="true"></i>Extra Beds
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="thermometer" class="room-card__amen-icon" aria-hidden="true"></i>AC
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="waves" class="room-card__amen-icon" aria-hidden="true"></i>Pool Access
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="coffee" class="room-card__amen-icon" aria-hidden="true"></i>Free Breakfast
+              </li>
+            </ul>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-num">₹2,500</span>
+                <span class="room-card__price-per">/night</span>
+              </div>
+              <a href="#" class="room-card__link">
+                View Details
+                <span class="room-card__arrow" aria-hidden="true">
+                  <i data-lucide="chevron-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       RESTAURANT / CULINARY
+  ═══════════════════════════════════════════ -->
+  <section class="restaurant section-pad" id="dining" aria-label="Dining at Ram Rani Hotel">
+    <div class="container">
+      <div class="restaurant__grid">
+
+        <!-- Text Column -->
+        <div class="restaurant__text fade-up">
+          <div class="section-tag">Culinary Excellence</div>
+
+          <h2 class="restaurant__headline">
+            The Art of<br /><em>Delicious Dining</em>
+          </h2>
+
+          <p class="restaurant__body">
+            <strong>Ram Rani Restaurant</strong> celebrates the authentic flavors of India with a curated menu of multi-cuisine delicacies. Our expert chefs prepare hygienic, delicious meals using fresh ingredients and traditional recipes, creating an unforgettable dining experience for families, travelers, and corporate guests alike.
+          </p>
+          <p class="restaurant__body">
+            From traditional Indian breakfast and regional specialties to Continental favorites, every dish is crafted with care. Our warm ambiance and attentive service make Ram Rani Restaurant the perfect choice for casual dining or special celebrations.
+          </p>
+
+          <ul class="restaurant__meta" role="list">
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Open Daily</span>
+              <span class="restaurant__meta-value">6:30 — 23:00</span>
+            </li>
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Cuisine</span>
+              <span class="restaurant__meta-value">Multi-Cuisine</span>
+            </li>
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Google Rating</span>
+              <span class="restaurant__meta-value">3.8 &#9733; (240+)</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn--outline" aria-label="Reserve a table at Ram Rani Restaurant">
+            Reserve a Table
+            <i data-lucide="arrow-right" class="btn__icon" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Image Column -->
+        <div class="restaurant__img-wrap fade-up" style="--delay: 0.18s">
+          <img
+            src="https://images.unsplash.com/photo-1504674900600-f032a568e944?auto=format&fit=crop&w=900&q=80"
+            alt="Ram Rani Restaurant — warm dining space with authentic Indian cuisine"
+            class="restaurant__img"
+            loading="lazy"
+            width="900"
+            height="510"
+          />
+          <div class="restaurant__quote-card" aria-label="Guest feedback about the restaurant">
+            <div class="restaurant__stars" aria-label="Five stars" role="img">
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            </div>
+            <blockquote class="restaurant__quote">"Delicious food and welcoming service."</blockquote>
+            <cite class="restaurant__quote-source">— Guest Review, 2026</cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section-pad" id="testimonials" aria-label="Guest testimonials">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-tag section-tag--center">Guest Stories</div>
+        <h2 class="section-headline">What Our Guests Say</h2>
+      </div>
+
+      <ul class="testimonials__grid" role="list">
+
+        <li class="testimonial-card fade-up" style="--delay: 0s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Perfect stop on our family trip! The staff was so welcoming, the rooms were clean and comfortable, and the swimming pool was a hit with the kids. We'll definitely return!"
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=47"
+              alt="Rajesh Kumar"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Rajesh Kumar &amp; Family</p>
+              <p class="testimonial-card__title">Delhi, India</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="testimonial-card fade-up" style="--delay: 0.12s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Great value for money. The restaurant food is authentic and delicious. Free Wi-Fi made it easy to stay connected. Highly recommended for travelers on G.T. Road!"
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=33"
+              alt="Amit Patel"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Amit Patel</p>
+              <p class="testimonial-card__title">Business Traveler</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="testimonial-card fade-up" style="--delay: 0.24s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Excellent hospitality! The staff went out of their way to make our stay comfortable. Great location near Dr. Kiran Singh Hospital. Free parking is a huge plus!"
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=45"
+              alt="Priya Singh"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Priya Singh</p>
+              <p class="testimonial-card__title">Mohania, Bihar</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="Ram Rani Hotel – Home">
+            <span class="footer__logo-the">Welcome to</span>
+            <span class="footer__logo-name">Ram Rani Hotel</span>
+            <span class="footer__logo-rule" aria-hidden="true"></span>
+          </a>
+          <p class="footer__tagline">
+            Your home away from home. Comfortable stays, delicious dining, on G.T. Road, Mohania, Bihar.
+          </p>
+          <ul class="footer__social" role="list" aria-label="Social media links">
+            <li>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i data-lucide="instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i data-lucide="facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                <i data-lucide="phone" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location -->
+        <div class="footer__col">
+          <h3 class="footer__col-heading">Location</h3>
+          <address class="footer__address">
+            <div class="footer__contact-row">
+              <i data-lucide="map-pin" class="footer__contact-icon" aria-hidden="true"></i>
+              <span>Plot No -1338/300, Beside Dr Kiran Singh Hospital,<br />G.T Road, Mohania, Bihar 821109</span>
+            </div>
+            <div class="footer__contact-row">
+              <i data-lucide="phone" class="footer__contact-icon" aria-hidden="true"></i>
+              <a href="tel:+919206108200" class="footer__contact-link">+91 92061 08200</a>
+            </div>
+            <div class="footer__contact-row">
+              <i data-lucide="mail" class="footer__contact-icon" aria-hidden="true"></i>
+              <a href="mailto:info@ramranihotel.in" class="footer__contact-link">info@ramranihotel.in</a>
+            </div>
+          </address>
+          <a href="https://maps.google.com/maps/place/Mohania,+Bihar" target="_blank" rel="noopener noreferrer" class="footer__map-link">View on Map &rarr;</a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-heading">Quick Links</h3>
+          <nav aria-label="Footer quick links">
+            <ul class="footer__links" role="list">
+              <li><a href="#rooms"       class="footer__link">Rooms &amp; Suites</a></li>
+              <li><a href="#dining"      class="footer__link">Dining &amp; Bar</a></li>
+              <li><a href="#amenities"   class="footer__link">Spa &amp; Wellness</a></li>
+              <li><a href="#"            class="footer__link">Meetings &amp; Events</a></li>
+              <li><a href="#gallery"     class="footer__link">Gallery</a></li>
+              <li><a href="#"            class="footer__link">Press</a></li>
+              <li><a href="#"            class="footer__link">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__col footer__col--newsletter">
+          <h3 class="footer__col-heading">Special Offers</h3>
+          <p class="footer__nl-body">
+            Subscribe for exclusive discounts, seasonal packages, and special dining offers.
+          </p>
+          <div class="footer__nl-form" id="newsletter-form">
+            <div class="footer__nl-input-wrap" id="nl-input-wrap">
+              <label for="nl-email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="nl-email"
+                name="email"
+                class="footer__nl-input"
+                placeholder="Your email address"
+                autocomplete="email"
+                aria-label="Email address for newsletter"
+              />
+              <button class="footer__nl-btn" id="nl-submit-btn" type="button" aria-label="Subscribe to newsletter">
+                <i data-lucide="send" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="footer__nl-success" id="nl-success" hidden>
+              &#10003; Thank you. We'll be in touch.
+            </p>
+          </div>
+          <div class="footer__member-box" aria-label="Guest benefits">
+            <p class="footer__member-label">Our guests enjoy</p>
+            <p class="footer__member-perks">
+              Best rates &middot; Free parking &middot; Free Wi-Fi &middot; Complimentary tea/coffee
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Ram Rani Hotel & Restaurant, Mohania. All rights reserved.</p>
+        <nav aria-label="Legal links">
+          <ul class="footer__legal" role="list">
+            <li><a href="#" class="footer__legal-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__legal-link">Terms of Service</a></li>
+            <li><a href="#" class="footer__legal-link">Cookie Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
